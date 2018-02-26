@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Date: " />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/patientID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="PP1"
+                android:id="@+id/RadioButtonPP1"
+                android:onClick="Event"
+                android:layout_column="1"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="PP2"
+                android:id="@+id/RadioButtonPP2"
+                android:onClick="Event"
+                android:layout_column="2"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ADM"
+                android:onClick="Event"
+                android:id="@+id/RadioButtonADM"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="MP"
+                android:id="@+id/RadioButtonMP"
+                android:onClick="Event"
+                android:layout_column="3"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DC"
+                android:id="@+id/RadioButtonDC"
+                android:onClick="Event"
+                android:layout_column="4"
+                android:checked="false" />
+            <RadioButton
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="FU"
+                android:id="@+id/RadioButtonFU"
+                android:onClick="Event"
+                android:layout_column="5"
+                android:checked="false" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:touchscreenBlocksFocus="false">
+        
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:text="FM/SE" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="1. Reflexes" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = no reflex elicited\n2 = reflex elicited" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp">
+        <TextView
+            android:paddingStart="40dp"
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="a. Biceps of Finger Flexors" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton1a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton1a2"
+            android:layout_column="2"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="b. Triceps" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton1b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton1b2"
+            android:layout_column="2"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="2. Flexor Synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = cannot perform\n1 = performs partly\n2 = performs faultlessly" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="a. Retraction" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="b. Elevation" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="c. Abduction" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="d. External Rotation" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2d0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2d1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2d2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="e. Elbow Flexion" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2e0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2e1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2e2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="f. Forearm Supination" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton2f0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton2f1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton2f2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="3. Extensor Synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = cannot perform\n1 = performs partly\n2 = performs faultlessly" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="a. Adduction and Internal Rotation" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton3a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton3a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton3a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="b. Elbow Extension" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton3b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton3b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton3b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="c. Forearm Pronation" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton3c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton3c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton3c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="4. Mixed Synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = synergy begins at onset\n1 = synergy begins later in movement\n2 = no synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="a. Hand to Lumbar Spine" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton4a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton4a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton4a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="b. Shoulder Flexion to 90 With \n     Extended Elbow" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton4b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton4b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton4b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="c. Forearm Supination/Pronation \n    With Elbow At 90" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton4c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton4c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton4c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="5. Isolated Movement Without Synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = synergy begins at onset\n1 = synergy begins later in movement\n2 = no synergy" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="a. Shoulder Abduction to 90 \n     With Extended Elbow" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton5a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton5a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton5a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="b. Shoulder Flexion 90-180 With \n     Extended Elbow" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton5b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton5b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton5b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="c. Forearm Supination/Pronation \n    With Elbow Extended" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton5c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton5c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton5c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="6. Normal Reflex Activity" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = 2+ reflexes hyperactive\n1 = 1 reflex hyperactive\n2 = no reflex hyperactive" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="a. Biceps, Finger Flexors, Triceps \n     (Score Only if Section 5 Perfect)" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton6a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton6a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton6a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:paddingTop="30dp"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="FM/WH" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:text="1. Wrist Flexion/Extension \n    With Shoulder at 0, elbow at 90"/>
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton7a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton7a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton7a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = no volitional movement\n1 = partial movement\n2 = full, controlled movement" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="2. Wrist Stability with Elbow at 90" />
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton8a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton8a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton8a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = unable to extend wrist to 15\n1 = extend wrist to 15 without resistance\n2 = extend wrist to 15 with resistance" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="3. Wrist Flexion/Extension \n    With Shoulder at 30-90, elbow at 0" />
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton9a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton9a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton9a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = no volitional movement\n1 = partial movement\n2 = full, controlled movement" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="4. Wrist Stability with shoulder \n    30-90, elbow at 0" />
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton10a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton10a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton10a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = unable to extend wrist to 15\n1 = extend wrist to 15 without resistance\n2 = extend wrist to 15 with resistance" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="5. Wrist Circumduction With \n    Shoulder at 0, elbow at 90" />
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton11a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton11a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton11a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = no volitional movement\n1 = partial movement\n2 = full, controlled movement" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="6. Fingers" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = cannot perform\n1 = performs partially\n2 = performs faultlessly" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingStart="40dp"
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="a. Mass Flexion" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton12a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton12a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton12a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="b. Mass Extension" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton12b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton12b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton12b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="100dp"
+        android:paddingTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="7. PIP-DIP Hook Grasp" />
+
+        <RadioButton
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton13a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton13a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton13a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = unable\n1 = performs without resistance\n2 = performs with resistance" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="8. Functional Hand Use" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = unable\n1 = holds with slight tug\n2 = holds firmly with tug" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingStart="40dp"
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="a. Thumb Abduction With Paper" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton14a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton14a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton14a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="b. Pincer Grasp With Pencil" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton14b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton14b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton14b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="c. Cylinder Grasp With Small Can" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton14c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton14c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton14c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="d. Spherical Grasp With Tennis Ball" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton14d0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton14d1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton14d2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="9. Coordination and Speed" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingStart="40dp"
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="a. Tremor" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton15a0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton15a1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton15a2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = marked tremor\n1 = slight tremor\n2 = no tremor" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="b. Dysmetria" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton15b0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton15b1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton15b2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = marked dysmetria\n1 = slight dysmetria\n2 = no dysmetria" />
+    </TableRow>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        >
+        <TextView
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="c. Time" />
+
+        <RadioButton
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/RadioButton15c0"
+            android:layout_column="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:id="@+id/RadioButton15c1"
+            android:layout_column="2"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:id="@+id/RadioButton15c2"
+            android:layout_column="3"
+            android:checked="false" />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:text="0 = greater than 6 second difference\n1 = 2-5 second difference\n2 = less than 2 second difference" />
+
+    </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right: "
+            android:textSize="40sp"/>
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/FuglMyerchronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Stop"
+            />
+
+        </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left: "
+            android:textSize="40sp"/>
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/FuglMyerchronometer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart2"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop2"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Stop"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:textSize="40sp"
+            android:text="Time Difference: "
+            />
+        <TextView
+            android:id="@+id/TimeDifference"
+            android:textSize="40sp"
+            android:text="0.0 seconds"
+            />
+        </TableRow>
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+</LinearLayout>

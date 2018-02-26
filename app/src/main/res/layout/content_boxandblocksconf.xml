@@ -1,0 +1,207 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Impaired Limb: " />
+        <TextView
+            android:id="@+id/affected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Right: "
+        android:textSize="40sp"/>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# blocks lifted / dropped: "
+            android:textSize="30sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BABR"
+            android:textSize="30sp"
+            android:textColor="#ef1e1e"
+            android:text="0"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:text="Left: "
+        android:textSize="40sp"/>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# blocks lifted / dropped: "
+            android:textSize="30sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BABL"
+            android:textSize="30sp"
+            android:textColor="#ef1e1e"
+            android:text="0"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            />
+
+
+    </TableRow>
+
+</LinearLayout>

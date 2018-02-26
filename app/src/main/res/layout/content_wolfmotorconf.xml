@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Wolf Motor Function Test: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Affected " />
+        <TextView
+            android:id="@+id/affected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Unafffected " />
+        <TextView
+            android:id="@+id/unaffected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="sticky-hastransparancy"
+        android:background="#fafafa">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="0 = No attempt to perform task\n1 = Attempt made to perform task \n2 = Task completed with minor assist of unaffected limb or two attempts required \n3 = Task completed slowly or with synergistic movement pattern \n4 = Task completed, however slightly slower or lack fluidity or precision \n5 = Task completed normally."
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="Task I"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="1. Forearm to table:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor1"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime1"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="2. Forearm to box:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor2"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime2"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="Task II"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="3. Extend elbow:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor3"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime3"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="4. Extend elbow (weighted):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor4"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime4"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="Task III"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="5. Hand to table:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor5"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime5"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="6. Hand to box:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor6"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime6"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="7. Hand to box (weighted):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Wolfmotor7"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="lbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="Task IV"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="8. Reach and retrieve:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor8"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime7"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="Task V"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="35sp"
+            android:text="9. Lift can:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor9"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime8"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="10. Lift pencil:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor10"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime9"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="11. Lift paper clip:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor11"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime10"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="12. Stack checkers:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor12"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime11"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="13. Flip cards:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor13"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime12"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="14. Grip strength (Right):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/numright1"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text=" , "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/numright2"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text=" , "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/numright3"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Average :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/wolfmotor14r"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="14. Grip strength (Left):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/numleft1"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text=" , "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/numleft2"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text=" , "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/numleft3"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Average :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/wolfmotor14l"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="15. Turn key in lock:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor15"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime13"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="16. Fold towel:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor16"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime14"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="17. Lift basket:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Score:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotor17"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/wolfmotortime15"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="35sp"
+            android:layout_marginLeft="10dp"
+            android:text="secs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:gravity="bottom">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Total:" />
+        <TextView
+            android:id="@+id/wolfmotortotal"
+            android:textColor="#ef1e1e"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Time Total:" />
+        <TextView
+            android:id="@+id/Wolfmotortimetotal"
+            android:textColor="#ef1e1e"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="secs" />
+
+    </TableRow>
+
+
+</LinearLayout>

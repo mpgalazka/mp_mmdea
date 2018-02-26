@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".Survey">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:text="Motor Power (MP) Scale" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp">
+            <include layout="@layout/content_mpconf" />
+        </ScrollView>
+    </LinearLayout>
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:id="@+id/bUploadR"
+            android:text="Upload to REDCap"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="UploadREDCap"
+            />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD PDF"
+            android:id="@+id/bUploadPDF"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="printDocument"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Generate Excel"
+            android:id="@+id/bExcel"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="Excel"
+            />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="CLOSE"
+            android:id="@+id/bClose"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="ReturnToForms"
+            />
+
+
+    </TableRow>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

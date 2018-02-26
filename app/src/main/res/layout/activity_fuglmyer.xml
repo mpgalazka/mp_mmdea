@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".Survey">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="45sp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal"
+    android:text="Upper Extremity Fugl-Meyer Scale"/>
+<ScrollView
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="80dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/content_fuglmyer" />
+</ScrollView>
+    <TableRow android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingBottom="20dp">
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="FM/SE:" />
+        <TextView
+            android:id="@+id/Total1"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="0.0" />
+        <TextView
+            android:paddingLeft="70dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="FM/WH:" />
+        <TextView
+            android:id="@+id/Total2"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:text="0.0" />
+        <TextView
+            android:paddingLeft="100dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Total:" />
+        <TextView
+            android:id="@+id/Total3"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="0.0" />
+    </TableRow>
+
+
+</android.support.design.widget.CoordinatorLayout>

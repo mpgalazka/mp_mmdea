@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".Survey">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/PatientID"
+        >
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Patient ID"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/etPatientID"
+            android:singleLine="true"
+            android:layout_width="360dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/bEnter"
+            android:text="Enter"
+            android:layout_marginBottom="10dp"
+            android:layout_width="418dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:id = "@+id/bCreateAs"
+            android:layout_marginTop="50dp"
+            android:layout_width="418dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text = "Create Assessment"
+            >
+
+        </Button>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="550dp"
+            android:layout_height="550dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logob"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/bContactUs"
+            android:text="Contact Us"
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Version"/>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

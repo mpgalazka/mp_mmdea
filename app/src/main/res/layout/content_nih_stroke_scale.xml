@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="1a. Level of Consciousness:"
+            android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1aa"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1ab"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1ac"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1ad"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Alert, keenly responsive \n1 = Not Alert, but arousable by minor stimulation \n2 = Not Alert, requires repeated stimulation to attend \n3 = Unresponsive, reflex movements only"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="1b. LOC Questions:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Ask patient the month and his/her age:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1ba"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1bb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1bc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Answers both questions correctly \n1 = Answers one question correctly \n2 = Answers neither question correctly"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="1c. LOC Commands: "
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Open + close eyes and grip + release non-paretic hand:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1ca"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1cb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH1cc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Performs both tasks correctly \n1 = Performs one task correctly \n2 = Performs neither task correctly"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="2. Best Gaze:"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Horizontal Movements only:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH2a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH2b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH2c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal \n1 = Partial gaze palsy \n2 = Forced deviation not overcome by oculocephalic maneuver"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="3. Visual Fields:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH3a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH3b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH3c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH3d"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal \n1 = Partial Hemianopia \n2 = Complete Hemianopia \n3 = Bilateral Hemianopia (blind including cortical blindness)"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="4. Facial Palsy:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH4a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH4b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH4c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH4d"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal \n1 = Minor paralysis (flattened nasolabial fold, asymmetry on smiling) \n2 = Partial paralysis (total or near total paralysis of lower face) \n3 = Complete paralysis of one or both sides (absence of facial movement in the upper and lower face)"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="5. Motor Function - Arm:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Right"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Ra"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Rb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Rc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Rd"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Re"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Rf"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes1"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes1"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Left"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5La"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Lb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Lc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Ld"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Le"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH5Lf"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes2"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes2"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal; limb holds 90 (or 45) degrees for 10 seconds without drift \n1 = Drift; limb holds 90 (or 45) degrees but drifts down before full 10 seconds but does not hit bed or other support \n2 = Some effort against gravity \n3 = No effort against gravity; limb falls \n4 = No movement \nUN = Untestable; joint fused or amputated"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="6. Motor Function - Leg:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Right"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Ra"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Rb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Rc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Rd"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Re"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Rf"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes3"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes3"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Left"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6La"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Lb"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Lc"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Ld"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Le"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH6Lf"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes4"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes4"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal; leg holds 30 degrees position for 5 seconds \n1 = Drift; leg falls by the end of 5 second period but does not hit bed \n2 = Some effort against gravity \n3 = No effort against gravity; limb falls \n4 = No movement \nUN = Untestable; joint fused or amputated"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="7. Limb Ataxia:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Finger/nose and heel/shin both sides. Ataxia disproportionate to weakness only:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH7a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH7b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH7c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH7d"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes5"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes5"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = No ataxia or paralysed/comatose/does not understand \n1 = Present in one limb \n2 = Present in two limbs \nUN = Untestable only if amputation or joint fusion"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="8. Sensory:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH8a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH8b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH8c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal \n1 = Mild to moderate sensory loss, aware of touch \n2 = Severe to total sensory loss"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="9. Best Language:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH9a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH9b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH9c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH9d"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = No aphasia \n1 = Mild to moderate aphasia; loss of fluency or comprehension \n2 = Severe aphasia; fragmented communication \n3 = Mute, global aphasia; no useable speech or auditory comprehension"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="10. Dysarthia:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH10a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH10b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH10c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH10d"
+            android:layout_marginLeft="10dp"
+            android:text="UN"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes6"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="610dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes6"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = Normal \n1 = Mild to moderate dysarthia; slurring of words, at worst can be understand with some difficulty \n2 = Severe dysarthia; near unintelligible or unable to speak (out of proportion to aphasia) \nUN = Untestable due to intubation or other physical barrier"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="11. Extinction and Inattention:"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH11a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH11b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="NIH"
+            android:id="@+id/NIH11c"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text="0 = No abnormality \n1 = Inattention or extinction to bilateral simultaneous stimulation in one sensory modality (visual, tactile, auditory, spatial or personal) \n2 = Profound hemi-attention or extinction to more than one modality"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+
+</LinearLayout>

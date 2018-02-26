@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="GENERAL HEALTH"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="1. In general, would you say your health is:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10dp"
+            />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq1"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="2. Compared to one year ago, how would you rate your health in general now?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/sfq2"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Limitations of Activities"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following items are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq3"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:id="@+id/sfq4"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq5"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q6"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq6"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q7"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq7"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q8"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq8"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q9"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq9"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q10"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/sfq10"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q11"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq11"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q12"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq12"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Physical Health Problems"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q13"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq13"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q14"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq14"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q15"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq15"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q16"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq16"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Emotional Health Problems"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)?"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q17"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq17"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q18"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq18"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q19"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq19"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Social Activities"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20. Emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq20"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Pain:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21. How much bodily pain have you had during the past 4 weeks?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq21"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22. During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sfq22"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Energy and Emotions:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These questions are about how you feel and how things have been during the last 4 weeks. For each question, please give the answer that comes closest to the way you have been feeling."
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q23"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq23"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q24"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq24"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q25"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq25"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q26"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq26"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q27"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq27"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q28"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq28"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q29"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq29"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q30"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq30"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q31"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/sfq31"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Social Activities:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32. During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities (like visiting with friends, relatives, etc.)?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <TextView
+        android:id="@+id/sfq32"
+        android:textColor="#ef1e1e"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="General Health:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How true or false is each ofthe following statements for you?"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q33"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/sfq33"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q34"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/sfq34"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q35"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/sfq35"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q36"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/sfq36"
+            android:textColor="#ef1e1e"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Physical functioning: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="0.0"
+            android:textColor="#ef1e1e"
+            android:id="@+id/PhyFunc"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Role Limitations due to physical health: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="#ef1e1e"
+            android:id="@+id/LimPhyHeal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Role Limitations due to emotional problems: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/LimEmoPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Energy/ Fatigue: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/EnFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Emotional Well-Being: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/EmoWell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Social Functioning: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SocFunc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize = "30sp"
+            android:text="Pain: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Pain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="General Health: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/GenHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+
+</LinearLayout>

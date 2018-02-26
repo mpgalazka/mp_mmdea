@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:tag="sticky-hastransparancy"
+        android:background="#fafafa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Barthel ADL Index: Guidelines"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. The index should be used as a record of what a patient does, not as a record of what a patient could do."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. The main aim is to establish degree of independence from any help, physical or verbal, however minor and for whatever reason."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. The need for supervision renders the patient not independent."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. A patients performance should be established using the best available evidence. Asking the patient, friends/relatives, and nurses will be the usual source, but direct observation and common sense are also important. However, direct testing is not needed."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Usually the performance over the preceding 24 – 48 hours is important, but occasionally longer periods will be relevant."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Middle categories imply that the patient supplies over 50% of the effort."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Use of aids to be independent is allowed."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="1.Feeding:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel1a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel1b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel1c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = unable\n5 = needs help cutting, spreading butter, etc., or requires modified diet\n10 = independent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="2.Bathing:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel2a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel2b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = dependent\n5 = independent (or in shower)"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="3.Grooming:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel3a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Barthel3b"
+            android:onClick="Barthel"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = needs to help with personal care\n5 = independent face/hair/teeth/shaving (implements provided)"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="4.Dressing:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel4a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel4b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel4c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = dependent \n5 = needs help but can do about half unaided \n10 = independent (including buttons, zips, laces, etc.)"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="5.Bowels:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel5a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel5b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel5c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = incontinent (or needs to be given enemas) \n5 = occasional accident \n10 =  continent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="6.Bladder:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel6a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel6b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel6c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = incontinent, or catheterized and unable to manage alone \n5 = occasional accident \n10 =  continent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="7.Toilet Use:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel7a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel7b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel7c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = dependent \n5 = needs some help, but can do something alone \n10 =  independent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="8.Transfers (bed to chair and back):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel8a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel8b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel8c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel8d"
+            android:layout_marginLeft="10dp"
+            android:text="15"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = unable, no sitting balance \n5 = major help (one or two people, physical), can sit \n10 =  minor help (verbal or physical) \n15 = independent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="9.Mobility (on level surfaces):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel9a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel9b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel9c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel9d"
+            android:layout_marginLeft="10dp"
+            android:text="15"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = immobile or less than 50 yards \n5 = wheelchair independent, including corners, greater than 50 yards \n10 =  walks with help of one person (verbal or physical) greater than 50 yards \n15 = independent (but may use any aid; for example, stick) greater than 50 yards"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="10.Stairs:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel10a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel10b"
+            android:layout_marginLeft="10dp"
+            android:text="5"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Barthel"
+            android:id="@+id/Barthel10c"
+            android:layout_marginLeft="10dp"
+            android:text="10"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="0 = unable \n5 = needs help (verbal, physical, carrying aid) \n10 = independent"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+
+
+
+</LinearLayout>
+

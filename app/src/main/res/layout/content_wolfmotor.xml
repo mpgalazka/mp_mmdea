@@ -1,0 +1,1968 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Affected:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:text="Left"
+            android:textSize="18sp"
+            android:layout_marginLeft="48dp"
+            android:id="@+id/Affectedleft"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:layout_marginTop="15dp"
+
+            />
+        <CheckBox
+            android:text="Right"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Affectedright"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Unaffected:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:text="Left"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/Unaffectedleft"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:layout_marginTop="15dp"
+
+            />
+        <CheckBox
+            android:text="Right"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Unaffectedright"
+            android:layout_marginTop="15dp"/>
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="sticky-hastransparancy"
+        android:background="#fafafa">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:text="0 = No attempt to perform task\n1 = Attempt made to perform task \n2 = Task completed with minor assist of unaffected limb or two attempts required \n3 = Task completed slowly or with synergistic movement pattern \n4 = Task completed, however slightly slower or lack fluidity or precision \n5 = Task completed normally."
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:text="Task I"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="1. Forearm to table:"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor1f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1201"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+
+
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="2. Forearm to box:"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor2f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1202"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:text="Task II"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="3. Extend elbow:"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor3f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer3"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart3"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop3"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1203"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="4. Extend elbow (weighted):"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor4f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer4"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart4"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop4"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1204"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:text="Task III"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="5. Hand to table"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor5f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer5"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart5"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop5"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1205"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="6. Hand to box:"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor6f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer6"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart6"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop6"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1206"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="7. Hand to box (weighted):"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/Wolfmotor7"
+                android:hint="  1-20 max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:text="Task IV"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="8. Reach and retrieve"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor8f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer7"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart7"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop7"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1207"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:text="Task V"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="9. Lift can"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor9f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer8"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart8"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop8"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1208"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="10. Lift pencil"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor10f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer9"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart9"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop9"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b1209"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="11. Lift paper clip"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor11f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer10"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart10"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop10"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12010"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="12. Stack checkers"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor12f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer11"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart11"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop11"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12011"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="13. Flip cards"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor13f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer12"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart12"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop12"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12012"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="14. Grip Strength (Right):"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+
+                android:hint=" 1st "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthright1"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+
+                android:hint=" 2nd "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthright2"
+                android:inputType="number"
+
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+
+                android:hint=" 3rd "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthright3"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAvgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="Avg"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtResultright"
+                android:maxLength="5"
+
+                />
+
+
+
+
+        </TableRow>
+    </RadioGroup>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="14. Grip Strength (Left):"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+
+                android:hint=" 1st "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthleft1"
+                android:inputType="number"
+
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+
+                android:hint=" 2nd "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthleft2"
+                android:inputType="number"
+
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+
+                android:hint=" 3rd "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/gripstrengthleft3"
+                android:inputType="number"
+
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="lbs"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAvgleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:layout_marginTop="20dp"
+
+                />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:text="Avg"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtResultleft"
+                android:maxLength="5"
+                />
+
+
+
+
+        </TableRow>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="15. Turn key in lock"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor15f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer13"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart13"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop13"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12013"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="16. Fold towel"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor16f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer14"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart14"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop14"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12014"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="17. Lift basket"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17a"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17b"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17c"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17d"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17e"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="4"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Wolfmotor"
+            android:id="@+id/Wolfmotor17f"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="5"/>
+    </RadioGroup>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.example.maciej.mmdea.Chronometer
+            android:id="@+id/Wolfchronometer15"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"/>
+        <Button
+            android:id="@+id/bStart15"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start/Reset"
+            />
+        <Button
+            android:id="@+id/bStop15"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Stop"
+            />
+        <Button
+            android:id="@+id/b12015"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="120sec"
+            />
+    </TableRow>
+
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+
+
+
+</LinearLayout>

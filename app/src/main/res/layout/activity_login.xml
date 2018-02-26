@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".Survey">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/PatientID"
+        >
+
+
+        <EditText
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="45dp"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:id="@+id/Lusername"/>
+
+        <EditText
+            android:gravity="center"
+            android:singleLine="true"
+            android:id = "@+id/Lpassword"
+            android:layout_marginTop="10dp"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:inputType = "textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:id = "@+id/buttonLogin"
+            android:layout_marginTop="30dp"
+            android:layout_width="418dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick = "login"
+            android:text = "Log-in"
+            />
+
+
+
+        <ImageView
+            android:layout_marginTop="150dp"
+            android:layout_width="550dp"
+            android:layout_height="550dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logob"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/bContactUs"
+            android:text="Contact Us"
+            android:layout_marginTop="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/Version"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

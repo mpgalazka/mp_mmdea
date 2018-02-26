@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:context=".Survey">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient ID: "
+            android:id="@+id/patientID"
+            android:layout_gravity="center"
+            android:textSize="50sp"
+            android:layout_margin="52dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter New Patient ID"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ReturnToPatID"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:text="@string/Forms"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="50dp">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <Button
+               android:id="@+id/demo"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Patient Demographic Information"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/DemoADM"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/FuglMyer"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:text="Fugl-Meyer Assessment"/>
+
+
+
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP1"
+                   android:id="@+id/FMPP1"
+                   android:checked="false" />
+
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP2"
+                   android:id="@+id/FMPP2"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ADM"
+                   android:id="@+id/FMADM"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="MP"
+                   android:id="@+id/FMMP"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DC"
+                   android:id="@+id/FMDC"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FU"
+                   android:id="@+id/FMFU"
+                   android:checked="false" />
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/Barthel"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center_horizontal"
+               android:text="Barthel ADL Index"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/BarthelADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/BarthelMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/BarthelDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/BarthelFU"
+                   android:checked="false" />
+
+
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/SF36"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="SF-36 Questionnaire"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/SF36ADM"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/tdcs"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="tDCS Questionnaire"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/tdcsADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/tdcsMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/tdcsDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/tdcsFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/sisv3"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Stroke Impact Scale Version 3.0"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/sisv3ADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/sisv3MP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/sisv3DC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/sisv3FU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/lextreme"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Lower Extremeity"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP1"
+                   android:id="@+id/LMPP1"
+                   android:checked="false" />
+
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP2"
+                   android:id="@+id/LMPP2"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ADM"
+                   android:id="@+id/LMADM"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="MP"
+                   android:id="@+id/LMMP"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DC"
+                   android:id="@+id/LMDC"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FU"
+                   android:id="@+id/LMFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+           
+           
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+
+           <Button
+               android:id="@+id/NIH"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="NIH Stroke Scale"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/NIHADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/NIHMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/NIHDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/NIHFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/mp"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Motor Power"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/MPADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/MPMP"
+                   android:checked="false" />
+
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/MPDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/MPFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/wolf"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Wolf Motor Function Test"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/WolfADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/WolfMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/WolfDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/WolfFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+
+           <Button
+               android:id="@+id/ULMAS"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Upper Limb Modified Ashworth Score"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/ULMASADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/ULMASMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/ULMASDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/ULMASFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+
+
+
+           <Button
+               android:id="@+id/ARRT"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:layout_gravity="center"
+               android:text="Action Research Arm Test"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="ADM"
+                   android:id="@+id/ARRTADM"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="MP"
+                   android:id="@+id/ARRTMP"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="DC"
+                   android:id="@+id/ARRTDC"
+                   android:checked="false" />
+               <CheckBox
+                   android:layout_marginStart="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="FU"
+                   android:id="@+id/ARRTFU"
+                   android:checked="false" />
+
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/BAB"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="25dp"
+               android:text="Box and Blocks"/>
+
+
+
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal">
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP1"
+                   android:id="@+id/BABPP1"
+                   android:checked="false" />
+
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="PP2"
+                   android:id="@+id/BABPP2"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="ADM"
+                   android:id="@+id/BABADM"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="MP"
+                   android:id="@+id/BABMP"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="DC"
+                   android:id="@+id/BABDC"
+                   android:checked="false" />
+               <CheckBox
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="FU"
+                   android:id="@+id/BABFU"
+                   android:checked="false" />
+           </LinearLayout>
+           
+           
+           
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

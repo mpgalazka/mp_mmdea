@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:id="@+id/patientID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:text="Patient ID: " />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:textSize = "25sp"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            />
+    </TableRow>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="GENERAL HEALTH"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="1. In general, would you say your health is:"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10dp"
+            />
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Excellent"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq1a"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="Very Good"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/csfq1b"/>
+        <RadioButton
+            android:text="Good"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/csfq1c"/>
+        <RadioButton
+            android:text="Fair"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/csfq1d"
+            />
+        <RadioButton
+            android:text="Poor"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/csfq1e"/>
+
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="2. Compared to one year ago, how would you rate your health in general now?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Much better now than one year ago"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq2a"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somewhat better now than one year ago"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq2b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the same"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq2c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somewhat worse now than one year ago"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq2d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Much worse than one year ago"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq2e"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Limitations of Activities"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The following items are about activities you might do during a typical day. Does your health now limit you in these activities? If so, how much?"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q3"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq3a"    />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq3b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq3c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q4"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq4a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq4b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq4c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q5"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq5a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq5b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq5c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q6"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq6a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq6b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq6c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q7"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq7a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq7b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq7c"/>
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q8"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq8a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq8b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq8c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q9"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq9a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq9b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq9c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q10"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq10a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq10b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq10c" />
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q11"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq11a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq11b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq11c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q12"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq12a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq12b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans3_12c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq12c"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Physical Health Problems"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q13"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq13a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq13b"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q14"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq14a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq14b"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q15"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq15a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq15b"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q16"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq16a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq16b"/>
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Emotional Health Problems"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of any emotional problems (such as feeling depressed or anxious)?"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q17"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq17a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq17b"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q18"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq18a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq18b"/>
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q19"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq19a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans13_19b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq19b"/>
+    </TableRow>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Social Activities"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20. Emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not at all"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq20a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slightly"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq20b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderately"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq20c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Severe"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq20d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Severe"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq20e"/>
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Pain:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21. How much bodily pain have you had during the past 4 weeks?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq21a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Mild"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq21b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mild"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq21c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderate"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq21d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Severe"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq21e"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Severe"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq21f"/>
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22. During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)?"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not at all"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/csfq22a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A little bit"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq22b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderately"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq22c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quite a bit"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq22d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extremely"
+            android:textSize="18sp"
+            android:layout_marginLeft="20sp"
+            android:id="@+id/csfq22e"/>
+
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Energy and Emotions:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="These questions are about how you feel and how things have been during the last 4 weeks. For each question, please give the answer that comes closest to the way you have been feeling."
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q23"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq23f"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q24"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq24f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q25"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq25f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q26"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq26f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q27"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq27f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q28"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq28f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q29"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq29f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q30"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq30f"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/q31"
+        android:textSize="25sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31b"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31c"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31e"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq31f"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Social Activities:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32. During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities (like visiting with friends, relatives, etc.)?"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31a"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq32a"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31b"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq32b"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq32c"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31e"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq32d"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ans23_31f"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/csfq32e"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="General Health:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How true or false is each of the following statements for you?"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"
+        />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q33"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq33a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq33b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq33c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36d"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq33d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36e"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq33e"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q34"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq34a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq34b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq34c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36d"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq34d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36e"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq34e"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q35"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq35a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq35b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq35c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36d"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq35d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36e"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq35e"/>
+    </TableRow>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="@string/q36"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30sp"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36a"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq36a"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36b"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq36b"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36c"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq36c"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36d"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq36d"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ans33_36e"
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/csfq36e"/>
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        />
+    <TableRow android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Physical functioning: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="#ef1e1e"
+            android:id="@+id/PhyFunc"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Role Limitations due to physical health: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="#ef1e1e"
+            android:id="@+id/LimPhyHeal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Role Limitations due to emotional problems: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/LimEmoPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Energy/ Fatigue: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/EnFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Emotional Well-Being: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/EmoWell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="Social Functioning: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SocFunc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize = "30sp"
+            android:text="Pain: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Pain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize = "30sp"
+            android:text="General Health: "
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/GenHeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="0.0" />
+
+    </TableRow>
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Done!"
+        />
+
+
+</LinearLayout>

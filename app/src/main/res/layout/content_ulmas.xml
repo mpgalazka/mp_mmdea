@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Grading Scale:\n0 = No increase in tone\n1 = Slight increase in tone manifested by catch and release or by minimal resistance at the end of the range of motion when affected part(s) is moved in flexion or extension \n1+ = Slight increase in tone, manifested by at catch, followed by minimal resistance throughout the remainder (less than half) of the range of motion \n2 = More marked increase in tone through most of the range of motion, but affected part(s) easily moved \n3 = Considerable increase in muscle tone - passive movement difficult \n4 = Affected part(s) rigid in flexion or extension"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Elbow (flexors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Passively range the patient's elbow from maximum possible flexion to maximum possible extension in 1 second. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1c"
+            android:layout_marginLeft="10dp"
+            android:text="1+"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1d"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1e"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS1f"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Elbow (extensors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Passively range the patient's elbow from maximum possible extension to maximum possible flexion in 1 second. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2c"
+            android:layout_marginLeft="10dp"
+            android:text="1+"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2d"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2e"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS2f"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+    </RadioGroup>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Wrist/Fingers (flexors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="With the patients elbow at 90 degrees and wrist pronated (palm down), passively range the patient's wrist from maximum possible flexion to maximum possible extension in 1 second while maintaining the MCPs, PIPs, and DIPs in 0 degree/neutral. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3c"
+            android:layout_marginLeft="10dp"
+            android:text="1+"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3d"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3e"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS3f"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+    </RadioGroup>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Wrist/Fingers (extensors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="With the patients elbow at 90 degrees and wrist pronated (palm down), passively range the patient's wrist from maximum possible flexion to maximum possible extension in 1 second while maintaining the MCPs, PIPs, and DIPs in 0 degree/neutral. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4a"
+            android:layout_marginLeft="10dp"
+            android:text="0"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4b"
+            android:layout_marginLeft="10dp"
+            android:text="1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4c"
+            android:layout_marginLeft="10dp"
+            android:text="1+"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4d"
+            android:layout_marginLeft="10dp"
+            android:text="2"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4e"
+            android:layout_marginLeft="10dp"
+            android:text="3"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ulmas"
+            android:id="@+id/ULMAS4f"
+            android:layout_marginLeft="10dp"
+            android:text="4"/>
+    </RadioGroup>
+
+
+
+
+
+
+</LinearLayout>
+

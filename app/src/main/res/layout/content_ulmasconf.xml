@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Grading Scale:\n0 = No increase in tone\n1 = Slight increase in tone manifested by catch and release or by minimal resistance at the end of the range of motion when affected part(s) is moved in flexion or extension \n1+ = Slight increase in tone, manifested by at catch, followed by minimal resistance throughout the remainder (less than half) of the range of motion \n2 = More marked increase in tone through most of the range of motion, but affected part(s) easily moved \n3 = Considerable increase in muscle tone - passive movement difficult \n4 = Affected part(s) rigid in flexion or extension"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Elbow (flexors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/QULMAS1"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Passively range the patient's elbow from maximum possible flexion to maximum possible extension in 1 second. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Elbow (extensors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/QULMAS2"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Passively range the patient's elbow from maximum possible extension to maximum possible flexion in 1 second. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Wrist/Fingers (flexors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/QULMAS3"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="With the patients elbow at 90 degrees and wrist pronated (palm down), passively range the patient's wrist from maximum possible flexion to maximum possible extension in 1 second while maintaining the MCPs, PIPs, and DIPs in 0 degree/neutral. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            android:text="Wrist/Fingers (extensors):"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/QULMAS4"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="With the patients elbow at 90 degrees and wrist pronated (palm down), passively range the patient's wrist from maximum possible flexion to maximum possible extension in 1 second while maintaining the MCPs, PIPs, and DIPs in 0 degree/neutral. Do not repeat more than 3 times."
+        android:textStyle="italic"
+        android:textSize="15sp"
+        />
+
+
+
+</LinearLayout>
+

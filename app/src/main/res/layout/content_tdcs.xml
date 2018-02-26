@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:text="Did you experience any of the following symptoms or side effects?"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="1. Headache:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="1a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="1b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs1be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="1c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes1"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes1"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="2. Neck Pain:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="2a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="2b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs2be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="2c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes2"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes2"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="3. Scalp Pain:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="3a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="3b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs3be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="3c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes3"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes3"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="4. Scalp Burns:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="4a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="4b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs4be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="4c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes4"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes4"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="5. Tingling:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="5a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="5b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs5be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="5c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes5"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes5"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="6. Skin Redness:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="6a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="6b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs6be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="6c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes6"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes6"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="7. Sleepiness:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="7a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="7b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs7be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="7c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes7"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes7"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="8. Trouble Concentrating:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="8a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="8b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs8be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="8c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes8"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes8"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="9. Acute Mood Change:"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="9a. Choose Severity "
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9aa"
+            android:layout_marginLeft="10dp"
+            android:text="Absent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9ab"
+            android:layout_marginLeft="10dp"
+            android:text="Mild"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9ac"
+            android:layout_marginLeft="10dp"
+            android:text="Moderate"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9ad"
+            android:layout_marginLeft="10dp"
+            android:text="Severe"/>
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:text="9b. If present: Is this related to tDCS? "
+        />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9ba"
+            android:layout_marginLeft="10dp"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9bb"
+            android:layout_marginLeft="10dp"
+            android:text="Remote"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9bc"
+            android:layout_marginLeft="10dp"
+            android:text="Possible"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9bd"
+            android:layout_marginLeft="10dp"
+            android:text="Probable"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="MP"
+            android:id="@+id/tdcs9be"
+            android:layout_marginLeft="10dp"
+            android:text="Definite"/>
+
+    </RadioGroup>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="30dp"
+            android:text="9c. Notes: "
+            />
+        <EditText
+            android:maxLength="110"
+            android:id="@+id/notes9"
+            android:singleLine="true"
+            android:gravity="top|left"
+            android:layout_height="wrap_content"
+            android:layout_width="590dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Cnotes9"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
+            android:text="0/110"
+            android:textColor="#FFFFA114"
+            />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+
+</LinearLayout>

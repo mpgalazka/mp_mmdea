@@ -1,0 +1,1430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity"
+    android:orientation="vertical" android:layout_marginStart="15dp" android:layout_marginLeft="15dp">
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Patient Name:"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="  Enter Full Name"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Address Line 1:"
+            />
+
+        <EditText
+            android:id="@+id/address1"
+            android:singleLine="true"
+            android:hint="  Use Both Lines If Needed"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Address Line 2:"
+            />
+
+        <EditText
+            android:id="@+id/address2"
+            android:singleLine="true"
+            android:hint=" Use Both Lines If Needed"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Phone Number:"
+            />
+
+        <EditText
+            android:id="@+id/phone"
+            android:hint="  Enter Your Number"
+            android:inputType="phone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="DOB/Age:"
+            />
+
+        <EditText
+            android:id="@+id/dob"
+            android:hint="  mmddyyyy"
+            android:inputType="date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Email Address:"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:hint=" example@whatever.com"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Emergency Contact:"
+            />
+
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Contact Name:"
+            />
+
+        <EditText
+            android:id="@+id/emergencyname"
+            android:hint="  Enter Full Name"
+            android:inputType="textPersonName"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Number:"
+            />
+
+        <EditText
+            android:id="@+id/emergencynumber"
+            android:hint="  Number"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Please check off the following (as applicable)"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Handedness"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <CheckBox
+            android:text="Right"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/handright"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            />
+        <CheckBox
+            android:text="Left"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/handleft"/>
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Stroke Type"
+            />
+
+
+    </TableRow>
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Ischemic (Blood Clot)"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/stroketype1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <CheckBox
+            android:text="Hemorrhagic"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stroketype2"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Lesion Location (if known)"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Cortical"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/lesloc1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <CheckBox
+            android:text="Subcortical"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lesloc2"/>
+        <CheckBox
+            android:text="Mixed"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lesloc3"/>
+        <CheckBox
+            android:text="Other"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lesloc4"
+            />
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Body Weakness"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Right"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/bodweak1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <CheckBox
+            android:text="Left"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodweak2"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Weak Limb(s)"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Arm/Hand"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/weaklimb1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <CheckBox
+            android:text="Leg"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weaklimb2"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Number Of Strokes:"
+            />
+        <EditText
+            android:layout_marginTop="80dp"
+            android:id="@+id/numberofstrokes"
+            android:hint="Number"
+            android:inputType="number"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Stroke Date(s):"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/strokedates"
+            android:hint="  mmddyyyy.mmddyyyy..."
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Traumatic Brain Injury Date:"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/braininjdate"
+            android:inputType="date"
+            android:hint="  mmddyyyy"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Spinal Cord Injury Date/Level:"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/spineinjdate"
+            android:singleLine="true"
+            android:hint="  mmddyyyy/level"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Neurological Illness:"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/neuroillness"
+            android:hint="  enter illness"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Admission Date To Clinical Trial:"
+            />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/admdate"
+            android:hint="  mmddyyyy"
+            android:inputType="date"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="U.S. Veteran"
+            />
+
+
+    </TableRow>
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/vetyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vetno"/>
+
+
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Co-morbid diseases/Pertinent conditions:"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/comorbid"
+            android:hint="  enter any conditions"
+            android:singleLine="true"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="Demographic Data"
+            />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Smoker"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/smokeryes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/smokerno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Ex-Smoker"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/exsmokeryes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exsmokerno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Alcohol Use"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/alcoholyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alcoholno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="High Cholesterol"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/highcolyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/highcolno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Diabetes Type I"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/diabetes1yes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diabetes1no"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Diabetes Type II"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/diabetes2yes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diabetes2no"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Previous Stroke or TIA"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/prevstrokeyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prevstrokeno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Hypertension/ High Blood Pressure"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/hbpyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hbpno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Family History of Stroke/ IHD less than 65yr"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/famstrokeyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/famstrokeno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Atrial Fibrillation (including paroxysmal)"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Yes"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/atrialyes"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <RadioButton
+            android:text="No"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/atrialno"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Pharmacological Treatment/ Medications:"
+            />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:hint="  enter here"
+            android:id="@+id/pharmameds"
+            android:singleLine="true"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Diagnostic Testing:"
+            />
+
+
+    </TableRow>
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="CT scan"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/diagtest1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <CheckBox
+            android:text="MRI"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diagtest2"/>
+        <CheckBox
+            android:text="Other"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diagtest3"/>
+
+
+
+    </TableRow>
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Please indicate Program(s) of interest:"
+            />
+
+
+    </TableRow>
+
+
+
+
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Upper Limb Robotics"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/interest1"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem"
+
+            />
+        <CheckBox
+            android:text="Anklebot"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem"
+            android:id="@+id/interest2"/>
+        <CheckBox
+            android:text="EKSO"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem"
+            android:id="@+id/interest3"/>
+
+
+
+    </TableRow>
+
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Graduated Member Upper Limb"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/interest4"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem"
+
+            />
+        <CheckBox
+            android:text="Graduated Member Lower Limb"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectItem"
+            android:id="@+id/interest5"/>
+
+
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Other:"
+            />
+
+        <EditText
+            android:id="@+id/interest6"
+            android:hint="  other interests"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="25sp"/>
+
+
+    </TableRow>
+
+
+
+
+
+
+    <Button
+
+        android:id="@+id/donebutton"
+        android:layout_marginTop="30dp"
+        android:layout_margin="25dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Done!"
+        />
+
+
+
+
+</LinearLayout>

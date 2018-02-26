@@ -1,0 +1,3069 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@id/patientID"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:text="Patient ID: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Session:" />
+
+        <RadioButton
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADM"
+            android:id="@+id/radioButtonADM"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:id="@+id/radioButtonMP"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DC"
+            android:id="@+id/radioButtonDC"
+            android:checked="false" />
+        <RadioButton
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FU"
+            android:id="@+id/radioButtonFU"
+            android:checked="false" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Impaired Limb:"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:text="Left"
+            android:textSize="18sp"
+            android:layout_marginLeft="48dp"
+            android:id="@+id/Affectedleft"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            />
+        <CheckBox
+            android:text="Right"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Affectedright"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </TableRow>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="sticky-hastransparancy"
+        android:background="#fafafa"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:textSize="15sp"
+            android:text="Instructions"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="15sp"
+            android:text="There are four subtests: Grasp, Grip, Pinch, Gross Movement. Items in each are ordered so that:"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:text="• If the subject passes the first,(scored a 3) no more need to be administered and he scores top marks for that subtest;"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:text="• If the subject fails the first and fails the second, he scores zero, and again no more tests need to be performed that subtest; All tests are timed with stopwatch"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:text="• otherwise he needs to complete all tasks within the subtest"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="Scoring:"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="3 = Performs test normally \n2 = Completes test, but takes abnormally long or has great difficulty \n1 = Performs test partially \n0 = Can perform no part of the test"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:text="@string/TimeARRT"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        app:columnCount="4"
+        app:rowCount="14">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="2"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="3"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="5"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="7"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="9"
+            app:layout_columnSpan="4"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="A. 5 Finger Grip"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time Cut-Off\n Right/Left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1. Block 10cm\n(If score = 3 then total A = 18 and go to subset B.)"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b601"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4.1/4.3 sec"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA10"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA11"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA12"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA13"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2. Block 2.5cm\n(If score = 0 then total A = 0 and go to subset B.)"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="3"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b602"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.6/3.5 sec"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="3"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA20"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA21"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA22"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA23"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3. Block 5 cm"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="5"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b603"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.6/3.5 sec"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="5"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA30"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA31"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA32"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA33"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4. Block 7.5 cm"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="7"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b604"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.8/3.9 sec"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="7"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA40"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA41"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA42"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA43"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5. Ball"
+            android:textSize="15sp"
+            app:layout_row="9"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="9"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b605"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.7/3.9 sec"
+            android:textSize="15sp"
+            app:layout_row="9"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="9"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA50"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA51"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA52"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA53"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6. Metal Rectangle"
+            android:textSize="15sp"
+            app:layout_row="11"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="11"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b606"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.5/3.8 sec"
+            android:textSize="15sp"
+            app:layout_row="11"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="11"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA60"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA61"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA62"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTA63"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+    </android.support.v7.widget.GridLayout>
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ARRTA"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total A Section: 0.0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:columnCount="4"
+        app:rowCount="8">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="2"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="3"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="5"
+            app:layout_columnSpan="4"
+            />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="B. Cylindrical Grasp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time Cut-Off\n Right/Left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1. Cup with water\n(If score = 3 then total B = 12 and go to subset C.)"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b607"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop7"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="7.8/7.9 sec"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB10"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB11"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB12"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB13"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2. Tube 2.5cm\n(If score = 0 then total B = 0 and go to subset C.)"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="3"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b608"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop8"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4.1/4.2 sec"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="3"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB20"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB21"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB22"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB23"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3. Tube 1 cm"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="5"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b609"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4.1/4.4 sec"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="5"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB30"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB31"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB32"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB33"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4. Ring (3.5 cm) with synthetic hold"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="7"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6010"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop10"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.9/4.1 sec"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="7"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB40"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB41"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB42"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTB43"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ARRTB"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total B Section: 0.0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:columnCount="4"
+        app:rowCount="14">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="2"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="3"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="5"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="7"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="9"
+            app:layout_columnSpan="4"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C. Pincer Grip"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time Cut-Off\n Right/Left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1. Ball bearing, 6mm, 3rd (thumb ring-finger) (If score = 3 then total C = 18 and go to subset D.)"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6011"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4.4/4.5 sec"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC10"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC11"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC12"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC13"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2. Marble, 1.5cm, (thumb to index finger)(If score = 0 then total C = 0 and go to subset D.)"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="3"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6012"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop12"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.9/3.7 sec"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="3"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC20"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC21"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC22"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC23"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3. Marble 1.5 cm, (thumb and middle finger)"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="5"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6013"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop13"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.8/3.9 sec"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="5"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC30"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC31"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC32"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC33"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4. Marble 1.5 cm, (thumb and ring finger)"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="7"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6014"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop14"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.8/4.2 sec"
+            android:textSize="15sp"
+            app:layout_row="7"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="7"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC40"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC41"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC42"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC43"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5. Ball bearing 6 mm (thumb-index finger)"
+            android:textSize="15sp"
+            app:layout_row="9"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="9"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6015"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop15"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3.8/4.2 sec"
+            android:textSize="15sp"
+            app:layout_row="9"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="9"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC50"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC51"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC52"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC53"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6. Ball bearing 6 mm (thumb-middle finger)"
+            android:textSize="15sp"
+            app:layout_row="11"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="11"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6016"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop16"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="4.0/4.1 sec"
+            android:textSize="15sp"
+            app:layout_row="11"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="11"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC60"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC61"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC62"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTC63"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ARRTC"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total C Section: 0.0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:columnCount="4"
+        app:rowCount="6">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="2"
+            app:layout_columnSpan="4"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_row="3"
+            app:layout_columnSpan="4"
+            />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="D. Gross Movements"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Time Cut-Off\n Right/Left"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_row="0"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1. Hand to back of head (If score = 3 then total D = 9; end test)"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="1"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6017"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop17"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2.6/2.8 sec"
+            android:textSize="15sp"
+            app:layout_row="1"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="1"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD10"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD11"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD12"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD13"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2. Hand to mouth (If score = 0 then total D = 0; end test)"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="3"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6018"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop18"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2.4/2.5 sec"
+            android:textSize="15sp"
+            app:layout_row="3"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="3"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD20"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD21"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD22"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD23"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3. Hand on top of head"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="0"
+            app:layout_columnWeight=".8"
+            app:layout_rowWeight="1"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_row="5"
+            app:layout_column="1"
+            app:layout_columnWeight="1.2"
+            app:layout_rowWeight="1"
+            android:gravity="center"
+            >
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.maciej.mmdea.Chronometer
+                    android:id="@+id/ARRTchronometer19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="30sp"/>
+                <Button
+                    android:id="@+id/b6019"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:text="60 s"
+                    />
+
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bStart19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Start/Reset"
+                    />
+                <Button
+                    android:id="@+id/bStop19"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Stop"
+                    />
+
+            </TableRow>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2.6/2.8 sec"
+            android:textSize="15sp"
+            app:layout_row="5"
+            app:layout_column="2"
+            app:layout_columnWeight=".7"
+            app:layout_rowWeight="1"
+            />
+
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_row="5"
+            app:layout_column="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD30"
+                android:layout_marginLeft="7dp"
+                android:text="0"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD31"
+                android:layout_marginLeft="7dp"
+                android:text="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD32"
+                android:layout_marginLeft="7dp"
+                android:text="2"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ActionResearchArmTest"
+                android:id="@+id/AARTD33"
+                android:layout_marginLeft="7dp"
+                android:text="3"/>
+        </RadioGroup>
+
+
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ARRTD"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total D Section: 0.0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ARRTTotal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Total Score on ARA Test: 0.0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments:"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <com.example.maciej.mmdea.LimitedEditText
+        android:id="@+id/comments"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:minLines="3"
+        android:gravity="top|left"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:layout_width="750dp"
+        android:scrollbars="vertical"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Done!"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

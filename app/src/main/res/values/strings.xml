@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Mobile Medical Data Entry Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="Forms"><u>Forms</u></string>
+    <string name="TimeARRT"><b>Time</b>: enter the amount of time it takes the subject to freeform. The maximum amount of time is 60 sec. If the subject cannot perform the task 60 sec is entered in time</string>
+
+
+    <string name="API_TOKEN">6DDA789CCEF85A21FD8CE59D621262E0</string>
+
+
+    <string name="Version">Version 1.16</string>
+
+
+    <string name="q3">3. Vigorous activities, such as running, lifting heavy objects, participating in strenuous sports.</string>
+    <string name="q4">4. Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf.</string>
+    <string name="q5">5. Lifting or carrying groceries.</string>
+    <string name="q6">6. Climbing several flights of stairs.</string>
+    <string name="q7">7. Climbing one flight of stairs.</string>
+    <string name="q8">8. Bending, kneeling, or stooping.</string>
+    <string name="q9">9. Walking more than a mile.</string>
+    <string name="q10">10. Walking several blocks.</string>
+    <string name="q11">11. Walking one block.</string>
+    <string name="q12">12. Bathing or dressing yourself.</string>
+    <string name="q13">13. Cut down the amount of time you spent on work or other activities.</string>
+    <string name="q14">14. Accomplished less than you would like.</string>
+    <string name="q15">15. Were limited in the kind of work or other activities.</string>
+    <string name="q16">16. Had difficulty performing the work or other activities (for example, it took extra effort).</string>
+    <string name="q17">17. Cut down the amount of time you spent on work or other activities.</string>
+    <string name="q18">18. Accomplished less than you would like.</string>
+    <string name="q19">19. Didn\'t do work or other activities as carefully as usual.</string>
+    <string name="q20">20. Emotional problems interfered with your normal social activities with family, friends, neighbors, or groups?</string>
+    <string name="q21">21. How much bodily pain have you had during the past 4 weeks?</string>
+    <string name="q22">22. During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)?</string>
+    <string name="q23">23. Did you feel full of pep?</string>
+    <string name="q24">24. Have you been a very nervous person?</string>
+    <string name="q25">25. Have you felt so down in the dumps that nothing could cheer you up?</string>
+    <string name="q26">26. Have you felt calm and peaceful?</string>
+    <string name="q27">27. Did you have a lot of energy?</string>
+    <string name="q28">28. Have you felt downhearted and blue?</string>
+    <string name="q29">29. Did you feel worn out?</string>
+    <string name="q30">30. Have you been a happy person?.</string>
+    <string name="q31">31. Did you feel tired?</string>
+    <string name="q32">32. During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities(like visiting with friends, relatives, etc.)?</string>
+    <string name="q33">33. I seem to get sick a little easier than other people.</string>
+    <string name="q34">34. I am as healthy as anybody I know.</string>
+    <string name="q35">35. I expect my health to get worse.</string>
+    <string name="q36">36. My health is excellent.</string>
+    <string name="ans1a">Excellent</string>
+    <string name="ans1b">Very Good</string>
+    <string name="ans1c">Good</string>
+    <string name="ans1d">Fair</string>
+    <string name="ans1e">Poor</string>
+    <string name="ans2a">Much better now than one year ago</string>
+    <string name="ans2b">Somewhat better now than one year ago</string>
+    <string name="ans2c">About the same</string>
+    <string name="ans2d">Somewhat worse now than one year ago</string>
+    <string name="ans2e">Much worse than one year ago</string>
+    <string name="ans3_12a">Yes, Limited a lot.</string>
+    <string name="ans3_12b">Yes, Limited a little.</string>
+    <string name="ans3_12c">No, Not Limited at all.</string>
+    <string name="ans13_19a">Yes.</string>
+    <string name="ans13_19b">No.</string>
+    <string name="ans20a">Not at all</string>
+    <string name="ans20b">Slightly</string>
+    <string name="ans20c">Moderately</string>
+    <string name="ans20d">Severe</string>
+    <string name="ans20e">Very Severe</string>
+    <string name="ans21a">None</string>
+    <string name="ans21b">Very Mild</string>
+    <string name="ans21c">Mild</string>
+    <string name="ans21d">Moderate</string>
+    <string name="ans21e">Severe</string>
+    <string name="ans21f">Very Severe</string>
+    <string name="ans22a">Not at all</string>
+    <string name="ans22b">A little bit</string>
+    <string name="ans22c">Moderately</string>
+    <string name="ans22d">Quite a bit</string>
+    <string name="ans22e">Extremely</string>
+    <string name="ans23_31a">All of the time.</string>
+    <string name="ans23_31b">Most of the time.</string>
+    <string name="ans23_31c">A good bit of the time.</string>
+    <string name="ans23_31d">Some of the time.</string>
+    <string name="ans23_31e">A little bit of the time.</string>
+    <string name="ans23_31f">None of the time.</string>
+    <string name="ans32a">All of the time</string>
+    <string name="ans32b">Most of the time</string>
+    <string name="ans32c">Some of the time</string>
+    <string name="ans32d">A little bit of the time</string>
+    <string name="ans32e">None of the time</string>
+    <string name="ans33_36a">Definitely true.</string>
+    <string name="ans33_36b">Mostly true.</string>
+    <string name="ans33_36c">Don\'t know.</string>
+    <string name="ans33_36d">Mostly false.</string>
+    <string name="ans33_36e">Definitely false.</string>
+    <string name="title_activity_result">result</string>
+
+    <string-array name="NIH_1a">
+        <item>0 = Alert, keenly responsive</item>
+        <item>1 = Not Alert, but arousable by minor stimulation</item>
+        <item>2 = Not Alert, requires repeated stimulation to attend</item>
+        <item>3 = Unresponsive, reflex movements only</item>
+    </string-array>
+
+    <string-array name="NIH_1n">
+        <item>0 = Answers both questions correctly</item>
+        <item>1 = Not Alert, but arousable by minor stimulation</item>
+        <item>2 = Not Alert, requires repeated stimulation to attend</item>
+        <item>3 = Unresponsive, reflex movements only</item>
+    </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+
+</resources>
+
+

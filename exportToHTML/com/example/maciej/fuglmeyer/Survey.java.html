@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>Survey.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Survey.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">com.example.maciej.fuglmeyer; 
+ 
+        </span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+        </span><span class="s0">import </span><span class="s1">android.support.design.widget.FloatingActionButton; 
+        </span><span class="s0">import </span><span class="s1">android.support.design.widget.Snackbar; 
+        </span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+        </span><span class="s0">import </span><span class="s1">android.support.v7.widget.Toolbar; 
+        </span><span class="s0">import </span><span class="s1">android.view.View; 
+        </span><span class="s0">import </span><span class="s1">android.view.Menu; 
+        </span><span class="s0">import </span><span class="s1">android.view.MenuItem; 
+        </span><span class="s0">import </span><span class="s1">android.widget.CheckBox; 
+        </span><span class="s0">import </span><span class="s1">android.widget.TextView; 
+ 
+        </span><span class="s0">import </span><span class="s1">java.text.DateFormat; 
+        </span><span class="s0">import </span><span class="s1">java.util.Date; 
+ 
+</span><span class="s0">public class </span><span class="s1">Survey </span><span class="s0">extends </span><span class="s1">AppCompatActivity </span><span class="s0">implements </span><span class="s1">View.OnClickListener { 
+ 
+    TextView currentDateTimeString; 
+    </span><span class="s0">double </span><span class="s1">FMSE, FMWH, total, Q1a, Q1b, Q2a, Q2b, Q2c, Q2d, Q2e, Q2f, Q3a, Q3b, Q3c, Q4a, Q4b, Q4c, Q5a, Q5b, Q5c, Q6a, 
+            Q7a, Q8a, Q9a, Q10a, Q11a, Q12a, Q12b, Q13a, Q14a, Q14b, Q14c, Q14d, Q15a, Q15b, Q15c; 
+ 
+ 
+ 
+    CheckBox checkBox1a0, checkBox1a1, checkBox1a2, checkBox1b0, checkBox1b1, checkBox1b2, checkBox2a0, 
+            checkBox2a1, checkBox2a2, checkBox2b0, checkBox2b1, checkBox2b2, checkBox2c0, checkBox2c1, checkBox2c2, 
+            checkBox2d0, checkBox2d1, checkBox2d2, checkBox2e0, checkBox2e1, checkBox2e2, checkBox2f0, checkBox2f1, 
+            checkBox2f2, checkBox3a0, checkBox3a1, checkBox3a2, checkBox3b0, checkBox3b1, checkBox3b2, checkBox3c0, 
+            checkBox3c1, checkBox3c2, checkBox4a0, checkBox4a1, checkBox4a2, checkBox4b0, checkBox4b1, checkBox4b2, 
+            checkBox4c0, checkBox4c1, checkBox4c2, checkBox5a0, checkBox5a1, checkBox5a2, checkBox5b0, checkBox5b1, 
+            checkBox5b2, checkBox6a0, checkBox6a1, checkBox6a2, checkBox7a0, checkBox7a1, checkBox7a2, checkBox8a0, 
+            checkBox8a1, checkBox8a2, checkBox9a0, checkBox9a1, checkBox9a2, checkBox10a0, checkBox10a1, checkBox10a2, 
+            checkBox11a0, checkBox11a1, checkBox11a2, checkBox12a0, checkBox12a1, checkBox12a2, checkBox12b0, checkBox12b1, 
+            checkBox12b2, checkBox13a0, checkBox13a1, checkBox13a2, checkBox14a0, checkBox14a1, checkBox14a2, checkBox14b0, 
+            checkBox14b1, checkBox14b2, checkBox14c0, checkBox14c1, checkBox14c2, checkBox14d0, checkBox14d1, checkBox14d2, 
+            checkBox15a0, checkBox15a1, checkBox15a2, checkBox15b0, checkBox15b1, checkBox15b2, checkBox15c0, checkBox15c1, 
+            checkBox15c2; 
+ 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_survey); 
+ 
+        currentDateTimeString = (TextView) findViewById(R.id.txtDate); 
+        String Date= DateFormat.getDateTimeInstance().format(</span><span class="s0">new </span><span class="s1">Date()); 
+        currentDateTimeString.setText(</span><span class="s2">&quot;Date: &quot; </span><span class="s1">+ Date); 
+ 
+ 
+        { 
+            checkBox1a0 = (CheckBox) findViewById(R.id.checkBox1a0); 
+            checkBox1a1 = (CheckBox) findViewById(R.id.checkBox1a1); 
+            checkBox1a2 = (CheckBox) findViewById(R.id.checkBox1a2); 
+            checkBox1b0 = (CheckBox) findViewById(R.id.checkBox1b0); 
+            checkBox1b1 = (CheckBox) findViewById(R.id.checkBox1b1); 
+            checkBox1b2 = (CheckBox) findViewById(R.id.checkBox1b2); 
+            checkBox2a0 = (CheckBox) findViewById(R.id.checkBox2a0); 
+            checkBox2a1 = (CheckBox) findViewById(R.id.checkBox2a1); 
+            checkBox2a2 = (CheckBox) findViewById(R.id.checkBox2a2); 
+            checkBox2b0 = (CheckBox) findViewById(R.id.checkBox2b0); 
+            checkBox2b1 = (CheckBox) findViewById(R.id.checkBox2b1); 
+            checkBox2b2 = (CheckBox) findViewById(R.id.checkBox2b2); 
+            checkBox2c0 = (CheckBox) findViewById(R.id.checkBox2c0); 
+            checkBox2c1 = (CheckBox) findViewById(R.id.checkBox2c1); 
+            checkBox2c2 = (CheckBox) findViewById(R.id.checkBox2c2); 
+            checkBox2d0 = (CheckBox) findViewById(R.id.checkBox2d0); 
+            checkBox2d1 = (CheckBox) findViewById(R.id.checkBox2d1); 
+            checkBox2d2 = (CheckBox) findViewById(R.id.checkBox2d2); 
+            checkBox2e0 = (CheckBox) findViewById(R.id.checkBox2e0); 
+            checkBox2e1 = (CheckBox) findViewById(R.id.checkBox2e1); 
+            checkBox2e2 = (CheckBox) findViewById(R.id.checkBox2e2); 
+            checkBox2f0 = (CheckBox) findViewById(R.id.checkBox2f0); 
+            checkBox2f1 = (CheckBox) findViewById(R.id.checkBox2f1); 
+            checkBox2f2 = (CheckBox) findViewById(R.id.checkBox2f2); 
+            checkBox3a0 = (CheckBox) findViewById(R.id.checkBox3a0); 
+            checkBox3a1 = (CheckBox) findViewById(R.id.checkBox3a1); 
+            checkBox3a2 = (CheckBox) findViewById(R.id.checkBox3a2); 
+            checkBox3b0 = (CheckBox) findViewById(R.id.checkBox3b0); 
+            checkBox3b1 = (CheckBox) findViewById(R.id.checkBox3b1); 
+            checkBox3b2 = (CheckBox) findViewById(R.id.checkBox3b2); 
+            checkBox3c0 = (CheckBox) findViewById(R.id.checkBox3c0); 
+            checkBox3c1 = (CheckBox) findViewById(R.id.checkBox3c1); 
+            checkBox3c2 = (CheckBox) findViewById(R.id.checkBox3c2); 
+            checkBox4a0 = (CheckBox) findViewById(R.id.checkBox4a0); 
+            checkBox4a1 = (CheckBox) findViewById(R.id.checkBox4a1); 
+            checkBox4a2 = (CheckBox) findViewById(R.id.checkBox4a2); 
+            checkBox4b0 = (CheckBox) findViewById(R.id.checkBox4b0); 
+            checkBox4b1 = (CheckBox) findViewById(R.id.checkBox4b1); 
+            checkBox4b2 = (CheckBox) findViewById(R.id.checkBox4b2); 
+            checkBox4c0 = (CheckBox) findViewById(R.id.checkBox4c0); 
+            checkBox4c1 = (CheckBox) findViewById(R.id.checkBox4c1); 
+            checkBox4c2 = (CheckBox) findViewById(R.id.checkBox4c2); 
+            checkBox5a0 = (CheckBox) findViewById(R.id.checkBox5a0); 
+            checkBox5a1 = (CheckBox) findViewById(R.id.checkBox5a1); 
+            checkBox5a2 = (CheckBox) findViewById(R.id.checkBox5a2); 
+            checkBox5b0 = (CheckBox) findViewById(R.id.checkBox5b0); 
+            checkBox5b1 = (CheckBox) findViewById(R.id.checkBox5b1); 
+            checkBox5b2 = (CheckBox) findViewById(R.id.checkBox5b2); 
+            checkBox6a0 = (CheckBox) findViewById(R.id.checkBox6a0); 
+            checkBox6a1 = (CheckBox) findViewById(R.id.checkBox6a1); 
+            checkBox6a2 = (CheckBox) findViewById(R.id.checkBox6a2); 
+            checkBox7a0 = (CheckBox) findViewById(R.id.checkBox7a0); 
+            checkBox7a1 = (CheckBox) findViewById(R.id.checkBox7a1); 
+            checkBox7a2 = (CheckBox) findViewById(R.id.checkBox7a2); 
+            checkBox8a0 = (CheckBox) findViewById(R.id.checkBox8a0); 
+            checkBox8a1 = (CheckBox) findViewById(R.id.checkBox8a1); 
+            checkBox8a2 = (CheckBox) findViewById(R.id.checkBox8a2); 
+            checkBox9a0 = (CheckBox) findViewById(R.id.checkBox9a0); 
+            checkBox9a1 = (CheckBox) findViewById(R.id.checkBox9a1); 
+            checkBox9a2 = (CheckBox) findViewById(R.id.checkBox9a2); 
+            checkBox10a0 = (CheckBox) findViewById(R.id.checkBox10a0); 
+            checkBox10a1 = (CheckBox) findViewById(R.id.checkBox10a1); 
+            checkBox10a2 = (CheckBox) findViewById(R.id.checkBox10a2); 
+            checkBox11a0 = (CheckBox) findViewById(R.id.checkBox11a0); 
+            checkBox11a1 = (CheckBox) findViewById(R.id.checkBox11a1); 
+            checkBox11a2 = (CheckBox) findViewById(R.id.checkBox11a2); 
+            checkBox12a0 = (CheckBox) findViewById(R.id.checkBox12a0); 
+            checkBox12a1 = (CheckBox) findViewById(R.id.checkBox12a1); 
+            checkBox12a2 = (CheckBox) findViewById(R.id.checkBox12a2); 
+            checkBox12b0 = (CheckBox) findViewById(R.id.checkBox12b0); 
+            checkBox12b1 = (CheckBox) findViewById(R.id.checkBox12b1); 
+            checkBox12b2 = (CheckBox) findViewById(R.id.checkBox12b2); 
+            checkBox13a0 = (CheckBox) findViewById(R.id.checkBox13a0); 
+            checkBox13a1 = (CheckBox) findViewById(R.id.checkBox13a1); 
+            checkBox13a2 = (CheckBox) findViewById(R.id.checkBox13a2); 
+            checkBox14a0 = (CheckBox) findViewById(R.id.checkBox14a0); 
+            checkBox14a1 = (CheckBox) findViewById(R.id.checkBox14a1); 
+            checkBox14a2 = (CheckBox) findViewById(R.id.checkBox14a2); 
+            checkBox14b0 = (CheckBox) findViewById(R.id.checkBox14b0); 
+            checkBox14b1 = (CheckBox) findViewById(R.id.checkBox14b1); 
+            checkBox14b2 = (CheckBox) findViewById(R.id.checkBox14b2); 
+            checkBox14c0 = (CheckBox) findViewById(R.id.checkBox14c0); 
+            checkBox14c1 = (CheckBox) findViewById(R.id.checkBox14c1); 
+            checkBox14c2 = (CheckBox) findViewById(R.id.checkBox14c2); 
+            checkBox14d0 = (CheckBox) findViewById(R.id.checkBox14d0); 
+            checkBox14d1 = (CheckBox) findViewById(R.id.checkBox14d1); 
+            checkBox14d2 = (CheckBox) findViewById(R.id.checkBox14d2); 
+            checkBox15a0 = (CheckBox) findViewById(R.id.checkBox15a0); 
+            checkBox15a1 = (CheckBox) findViewById(R.id.checkBox15a1); 
+            checkBox15a2 = (CheckBox) findViewById(R.id.checkBox15a2); 
+            checkBox15b0 = (CheckBox) findViewById(R.id.checkBox15b0); 
+            checkBox15b1 = (CheckBox) findViewById(R.id.checkBox15b1); 
+            checkBox15b2 = (CheckBox) findViewById(R.id.checkBox15b2); 
+            checkBox15c0 = (CheckBox) findViewById(R.id.checkBox15c0); 
+            checkBox15c1 = (CheckBox) findViewById(R.id.checkBox15c1); 
+            checkBox15c2 = (CheckBox) findViewById(R.id.checkBox15c2); 
+        } 
+ 
+        { 
+            checkBox1a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox1a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox1a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox1b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox1b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox1b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2c0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2c1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2c2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2d0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2d1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2d2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2e0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2e1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2e2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2f0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2f1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox2f2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3c0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3c1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox3c2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4c0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4c1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox4c2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox5b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox6a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox6a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox6a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox7a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox7a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox7a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox8a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox8a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox8a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox9a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox9a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox9a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox10a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox10a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox10a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox11a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox11a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox11a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox12b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox13a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox13a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox13a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14c0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14c1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14c2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14d0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14d1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox14d2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15a0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15a1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15a2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15b0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15b1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15b2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15c0.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15c1.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+            checkBox15c2.setOnClickListener(</span><span class="s0">this</span><span class="s1">); 
+        } 
+ 
+ 
+ 
+    } 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onClick(View v) { 
+ 
+        </span><span class="s0">switch </span><span class="s1">(v.getId()){ 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1a0: 
+                checkBox1a1.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1a2.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1a0.isChecked()){ 
+                    Q1a = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1a = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+ 
+                </span><span class="s0">break</span><span class="s1">; 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1a1: 
+                checkBox1a0.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1a2.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1a1.isChecked()){ 
+                    Q1a = Double.parseDouble(</span><span class="s2">&quot;1&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1a = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+                </span><span class="s0">break</span><span class="s1">; 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1a2: 
+                checkBox1a0.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1a1.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1a2.isChecked()){ 
+                    Q1a = Double.parseDouble(</span><span class="s2">&quot;2&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1a = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+                </span><span class="s0">break</span><span class="s1">; 
+        } 
+        </span><span class="s0">switch </span><span class="s1">(v.getId()){ 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1b0: 
+                checkBox1b1.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1b2.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1b0.isChecked()){ 
+                    Q1b = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1b = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+                </span><span class="s0">break</span><span class="s1">; 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1b1: 
+                checkBox1b0.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1b2.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1b1.isChecked()){ 
+                    Q1b = Double.parseDouble(</span><span class="s2">&quot;1&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1b = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+                </span><span class="s0">break</span><span class="s1">; 
+            </span><span class="s0">case </span><span class="s1">R.id.checkBox1b2: 
+                checkBox1b1.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                checkBox1b0.setChecked(</span><span class="s0">false</span><span class="s1">); 
+                </span><span class="s0">if </span><span class="s1">(checkBox1b2.isChecked()){ 
+                    Q1b = Double.parseDouble(</span><span class="s2">&quot;2&quot;</span><span class="s1">); 
+                } 
+                </span><span class="s0">else </span><span class="s1">{Q1b = Double.parseDouble(</span><span class="s2">&quot;0&quot;</span><span class="s1">);} 
+                </span><span class="s0">break</span><span class="s1">; 
+        } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        FMSE = Q1a + Q1b + Q2a + Q2b + Q2c + Q2d + Q2e + Q2f + Q3a + Q3b + Q3c + Q4a + Q4b + Q4c + Q5a + Q5b + Q5c + Q6a; 
+        FMWH = Q7a + Q8a + Q9a + Q10a + Q11a + Q12a + Q12b + Q13a + Q14a + Q14b + Q14c + Q14d + Q15a + Q15b + Q15c; 
+        total = FMSE + FMWH; 
+        ((TextView)findViewById(R.id.Total1)).setText(String.valueOf(FMSE)); 
+        ((TextView)findViewById(R.id.Total2)).setText(String.valueOf(FMWH)); 
+        ((TextView)findViewById(R.id.Total3)).setText(String.valueOf(total)); 
+ 
+    } 
+ 
+} 
+ 
+</span></pre>
+</body>
+</html>

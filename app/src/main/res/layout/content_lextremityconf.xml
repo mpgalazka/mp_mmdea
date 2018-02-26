@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+
+
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:text="Please double-check your answers"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="I. Reflex Activity:"
+        android:layout_height="wrap_content" />
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="1a. Achilles = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_1a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="1b:Patelar =  "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_1b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/notes1"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ef1e1e"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="II. Flexor Synergy:"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="2a: Hip flexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_2a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="2b: Knee flexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_2b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="2c: Ankle dorsiflexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_2c0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/notes2"
+
+        android:layout_marginLeft="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ef1e1e"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+
+
+
+
+    <!--III-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="III. Extensor Synergy:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3a: Hip extension = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_3a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3b: Adduction = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_3b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3c: Knee extension = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_3c0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3d: Ankle plantar flexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_3d0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+
+
+    <!--IV-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="IV. Combined Synergies:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="4a: Knee flexion beyond 90o = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_4a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="4b: Ankle dorsiflexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_4b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <!--V-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="V. Movement out of Synergy:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="5a: Knee flexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_5a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="5b: Ankle dorsiflexion = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_5b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        android:text="VI. Normal Reflexes:"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="6: Knee flexor, Patellar, Achilles = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_6a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+
+    <!--VII-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="VII. Coordinations and speed:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="7a: Tremor = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_7a0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="7b: Dysmetria = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_7b0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="7c: Speed = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_7c0pre"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Lower Extremity Total = "
+            />
+        <TextView
+            android:id="@+id/LExtrmt_Totalconf"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="35sp"/>
+    </TableRow>
+
+
+
+
+</LinearLayout>

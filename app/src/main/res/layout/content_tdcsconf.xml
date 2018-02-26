@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+
+
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:text="Did you experience any of the following symptoms or side effects?"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="1. Headache:"
+        android:layout_height="wrap_content" />
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="1a: "
+            />
+        <TextView
+            android:id="@+id/tdcs1aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="1b: "
+            />
+        <TextView
+            android:id="@+id/tdcs1ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes1"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="2. Neck Pain:"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="2a: "
+            />
+        <TextView
+            android:id="@+id/tdcs2aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="2b: "
+            />
+        <TextView
+            android:id="@+id/tdcs2ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes2"
+
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="3. Scalp Pain:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3a: "
+            />
+        <TextView
+            android:id="@+id/tdcs3aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="3b: "
+            />
+        <TextView
+            android:id="@+id/tdcs3ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes3"
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="4. Scalp Burns:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="4a: "
+            />
+        <TextView
+            android:id="@+id/tdcs4aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="4b: "
+            />
+        <TextView
+            android:id="@+id/tdcs4ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes4"
+
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="5. Tingling:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="5a: "
+            />
+        <TextView
+            android:id="@+id/tdcs5aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="5b: "
+            />
+        <TextView
+            android:id="@+id/tdcs5ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes5"
+
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="6. Skin Redness:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="6a: "
+            />
+        <TextView
+            android:id="@+id/tdcs6aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="6b: "
+            />
+        <TextView
+            android:id="@+id/tdcs6ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes6"
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="7. Sleepiness:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="7a: "
+            />
+        <TextView
+            android:id="@+id/tdcs7aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="7b: "
+            />
+        <TextView
+            android:id="@+id/tdcs7ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes7"
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="8. Trouble Concentrating:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="8a: "
+            />
+        <TextView
+            android:id="@+id/tdcs8aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="8b: "
+            />
+        <TextView
+            android:id="@+id/tdcs8ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes8"
+
+            android:layout_marginLeft="30dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:text="9. Acute Mood Change:"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="9a: "
+            />
+        <TextView
+            android:id="@+id/tdcs9aa"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="9b: "
+            />
+        <TextView
+            android:id="@+id/tdcs9ba"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+    </TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Notes: "
+            />
+        <TextView
+            android:id="@+id/notes9"
+            android:layout_marginLeft="30dp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ef1e1e"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

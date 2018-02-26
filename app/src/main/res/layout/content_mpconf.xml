@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/conDate"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:text="Date: "
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="Patient ID: " />
+        <TextView
+            android:id="@+id/conPatID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:text="" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Session: " />
+        <TextView
+            android:id="@+id/conSession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ef1e1e"
+            android:paddingTop="10dp"
+            android:text="" />
+
+    </TableRow>
+
+
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="1. Scapular Abduction/Upward Rotation (Serratus Anterior):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mpp1"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="2. Scapular Elevation (Upper Trapezius, Levator Scapulae):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp2"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="3. Scapular Adduction (Middle Trapezius, Rhomboid Major):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mpp3"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="4. Scapular Adduction/Depression (lower Trapezius):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp4"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="5. Scapular Adduction/Downward Rotation (Rhomboid Major/Minor):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp5"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="6. Shoulder Flexion (Deltoid, Coracobrachialis, Rotator Cuff):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp6"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="7. Shoulder Extension (Latissimus Dorsi, Teres Major, Posterior Deltoid):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp7"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="8. Shoulder Abduction (Deltoid Supraspinatus):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp8"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="9. Shoulder Horizontal Adduction (Pectoralis Major):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp9"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="10. Shoulder Horizontal Abduction (Posterior  Deltoid):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp10"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="11. Shoulder External Rotation (Infraspinatus, Teres Minor):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp11"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="12. Shoulder Internal Rotation (Subcap., Pec Major, Latissimus, Teres Major):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp12"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="13. Elbow Flexion (Biceps Brachii, Brachialis, Brachioradialis):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp13"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="14. Elbow Extension (Triceps Brachii):"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mpp14"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="15. Wrist Pronation:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp15"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="16. Wrist Supination:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp16"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="17. Wrist Flexion:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp17"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="18. Wrist Extension:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp18"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="19. Radial Deviation:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp19"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="35sp"
+            android:text="20. Ulnar Deviation:"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mpp20"
+            android:textColor="#ef1e1e"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:gravity="bottom">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Total (1-14):" />
+        <TextView
+            android:id="@+id/mppqT1"
+            android:textColor="#ef1e1e"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="0.0/100.0" />
+
+    </TableRow>
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:gravity="bottom">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Total (15-20):" />
+        <TextView
+            android:id="@+id/mppqT2"
+            android:textColor="#ef1e1e"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="0.0/100.0" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:gravity="bottom">
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="Grand Total:" />
+        <TextView
+            android:id="@+id/mppqT"
+            android:textColor="#ef1e1e"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:text="0.0/100.0" />
+
+    </TableRow>
+
+</LinearLayout>

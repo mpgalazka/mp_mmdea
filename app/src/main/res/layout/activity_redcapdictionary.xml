@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/variable"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/ibtn1"
+                    android:onClick="info"
+                    android:typeface="serif"
+                    android:text="i"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/infobutton"
+                    />
+
+                <TextView
+                    android:id="@+id/formname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/ibtn2"
+                    android:onClick="info"
+                    android:typeface="serif"
+                    android:text="i"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/infobutton"
+                    />
+
+                <TextView
+                    android:id="@+id/sectionheader"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Section Header"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/ibtn3"
+                    android:onClick="info"
+                    android:typeface="serif"
+                    android:text="i"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/infobutton"
+                    />
+
+                <TextView
+                    android:id="@+id/fieldtype"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/ibtn4"
+                    android:onClick="info"
+                    android:typeface="serif"
+                    android:text="i"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/infobutton"
+                    />
+
+                <TextView
+                    android:id="@+id/fieldlabel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </TextView>
+                <Button
+                    android:id="@+id/ibtn5"
+                    android:onClick="info"
+                    android:typeface="serif"
+                    android:text="i"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/infobutton"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/formname1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/formname2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/handedness"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/stroke"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/lesion"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/fieldtype11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/fieldtype12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel13"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/formname15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel15"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/fieldtype16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel16"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldtype18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/fieldtype19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/variable10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Variable"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/formname20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Form Name"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/sectionheader20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1">
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/fieldtype20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Type"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/fieldlabel20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:hint="Field Label"
+                    android:layout_weight="1">
+
+                </EditText>
+            </TableRow>
+            <Button
+                android:id = "@+id/Excel"
+                android:layout_width = "fill_parent"
+                android:layout_height = "wrap_content"
+                android:layout_centerHorizontal="true"
+                android:onClick = "Excel"
+                android:text = "Export as Excel (.csv)"
+                android:textColor="@color/colorPrimary"
+                android:layout_column="1"
+                />
+            <Button android:id="@+id/btn_clickme"
+                android:text="Connect to RedCap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</TableLayout>
