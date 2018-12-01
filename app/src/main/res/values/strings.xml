@@ -5,7 +5,7 @@
     <string name="TimeARRT"><b>Time</b>: enter the amount of time it takes the subject to freeform. The maximum amount of time is 60 sec. If the subject cannot perform the task 60 sec is entered in time</string>
 
 
-    <string name="API_TOKEN">6DDA789CCEF85A21FD8CE59D621262E0</string>
+    <string name="API_TOKEN">INSERT API TOKEN HERE</string>
 
 
     <string name="Version">Version 1.16</string>
